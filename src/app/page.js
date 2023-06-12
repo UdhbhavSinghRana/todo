@@ -19,12 +19,12 @@ export default async function Home() {
   console.log(todos);
   return (
     <>
-      <div>
+      <div className=''>
         <header className='text-2xl flex justify-between'>
           <div>Todo</div>
           <Link href="/new" className='border-2 p-2 rounded-xl hover:bg-slate-700 '>New</Link>
         </header>
-        <ul className='mt-4 px-4'>
+        <ul className='mt-4 '>
           {todos.map((todo) => (
             <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
             // <li key={todo.id} >{todo.title}</li>
